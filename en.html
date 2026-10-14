@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — Veshiy: Dream Diary</title>
+<style>
+  body { font: 16px/1.6 Georgia, "Times New Roman", serif; max-width: 760px; margin: 0 auto; padding: 24px 18px 60px; color: #1b2333; background: #faf8f3; }
+  h1 { font-size: 26px; color: #0e1a30; margin-bottom: 4px; }
+  h2 { font-size: 19px; color: #0e1a30; margin-top: 28px; border-bottom: 1px solid #d9d4c7; padding-bottom: 4px; }
+  .meta { color: #5a6173; font-size: 14px; }
+  a { color: #3a5480; }
+  table { border-collapse: collapse; width: 100%; font-size: 15px; }
+  td, th { border: 1px solid #d9d4c7; padding: 6px 8px; vertical-align: top; text-align: left; }
+  th { background: #efe9dc; }
+</style>
+</head>
+<body>
+<p class="meta"><a href="index.html">Русская версия</a></p>
+<h1>Privacy policy</h1>
+<p class="meta">Veshiy: Dream Diary for Android (application ID io.github.ttimesaistar.veshiy).<br>
+Effective 14 October 2026. Version 1.</p>
+
+<h2>In short</h2>
+<p>Your dreams are stored only on your phone. We do not receive them, store them on servers or share them with anyone. The app has no account, no ads and no analytics. Writing, readings and statistics work offline.</p>
+
+<h2>What data the app has and where it is stored</h2>
+<table>
+<tr><th>Data</th><th>Where it is stored</th><th>Sent to us or third parties?</th></tr>
+<tr><td>Dream texts, dates, the emotions and tags you choose</td><td>In the app's private storage on the phone</td><td>No</td></tr>
+<tr><td>Images found in dreams, dream mood, statistics</td><td>Computed and stored on the phone</td><td>No</td></tr>
+<tr><td>Settings: reminder time; PIN (if you turn it on)</td><td>On the phone. The PIN is kept only as a salted cryptographic hash; the PIN itself is never stored</td><td>No</td></tr>
+<tr><td>Purchase information (which product, purchase state, purchase token)</td><td>The app receives it from the Google Play app on the phone and remembers the status so paid features work offline</td><td>Not to us. Google processes the payment (see below)</td></tr>
+</table>
+<p>Diary data is not included in Android cloud backup: backup is turned off for this app. To keep a copy, use export to a file (JSON or text) in the app settings; the file goes where you choose. Uninstalling the app or clearing its data deletes the entries from the phone.</p>
+
+<h2>Purchases through Google Play</h2>
+<p>The one-time purchase "Full readings forever" and the Veshiy+ subscription use Google Play's billing system. Card and other payment details are entered in the Google Play window and processed by Google under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. The app has no access to them. The app has no server of its own: purchases are acknowledged on the phone.</p>
+
+<h2>Third-party libraries and what they send</h2>
+<ul>
+<li><b>Google Play Billing Library</b>. Talks to the Google Play app on the phone to show products, make purchases and check what you already own. It includes a Google component for sending service data, which is why the library is granted internet access. Through it the library may send Google technical information about how it works; this is governed by Google's terms and privacy policy. Dream texts are never passed to the library.</li>
+<li><b>AndroidX WorkManager</b>. Schedules the morning reminder on the phone and restores the schedule after a reboot. It sends nothing over the network.</li>
+<li><b>AndroidX, Jetpack Compose, Room, Kotlin</b> — user interface and the local database. They send no data.</li>
+</ul>
+
+<h2>Permissions</h2>
+<ul>
+<li><b>Notifications</b> (Android 13 and later) — for the morning reminder; requested only when you turn the reminder on.</li>
+<li><b>Google Play billing</b> (com.android.vending.BILLING) — for purchases.</li>
+<li><b>Internet and network state</b> — added by the Google billing library. The app itself makes no network requests.</li>
+<li><b>Run at startup, keep the device awake while background work runs, foreground service</b> — added by WorkManager so the reminder survives a reboot.</li>
+</ul>
+
+<h2>Children</h2>
+<p>The app is intended for adults (18+) and is not directed at children.</p>
+
+<h2>Readings</h2>
+<p>Readings follow the dream-book tradition and are meant for self-reflection and curiosity. They do not predict the future and are not medical or psychological advice.</p>
+
+<h2>Your rights</h2>
+<p>All diary data stays with you: you can view, edit, delete it in the app and export it to a file. Since we do not receive your data, there is nothing for us to provide or delete on our side.</p>
+
+<h2>Changes</h2>
+<p>If the app starts handling data differently, we will update this page and the date above before releasing that version.</p>
+
+<h2>Contact</h2>
+<p>Questions about the app or this policy: <a href="https://github.com/ttimesai-star/veshiy-privacy/issues">project issues page</a>.</p>
+</body>
+</html>
